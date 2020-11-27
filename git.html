@@ -52,9 +52,15 @@
             <p><code>git checkout -b назва-гілки</code></p>
             <h1>З'єднати гілки в одну (merge)</h1>
             <ol>
-              <li>Записати зміни в локальний репозиторій <code>git checkout master</code></li>
+              <li>
+                <h3>Записати зміни в локальний репозиторій гілки dev</h3>
+                <p>Додати файли до індексу<code>git add назва файлу</code></p>
+                <p>Записати зміни в локальний репозиторій гілки dev<code>git commit -m"коментар"</code></p>
+                <p>Записати локальний репозиторій гілки dev на сервер<code>git push -u origin dev</code></p>
+              </li>
               <li>Переходимо на гілку master куда ми хочемо додати код <code>git checkout master</code></li>
               <li>Об'єднуємо гілку master із гілкою dev <code>git merge dev</code></li>
+              <li>Записати локальний репозиторій гілки master на сервер<code>git push -u origin master</code></li>
             </ol>
           </div>
         </div>
