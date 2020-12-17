@@ -7,9 +7,9 @@ const connect = require('gulp-connect');
 
 
 function generateHTML(cb) {
-    src('./views/index.ejs')
+    src('./views/*.ejs')
         .pipe(ejs({
-            title: 'Hello Semaphore CI!',
+            title: 'Course',
         }))
         .pipe(rename({
             extname: '.html'
@@ -34,7 +34,7 @@ function connectFn() {
 
 function defaultTask(cb) {
     connectFn();
-    watch('./views/**.ejs', generateHTML);
+    watch('./views/**/*.ejs', generateHTML);
     watch('./src/**/*.js', series(javascript));
     cb();
 }
