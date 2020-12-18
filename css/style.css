@@ -1,0 +1,32 @@
+:root {
+    --green: #72c02c;
+    --grey-6: rgba(255, 255, 255, 0.6);
+    --grey-8: rgba(255, 255, 255, 0.8);
+    --bg-dark-9: rgba(0, 0, 0, 0.9);
+}
+
+.bg-dark-9 {
+    background-color: var(--bg-dark-9);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* footer */
+footer p, li {
+    color: var(--grey-6);
+}
+
+footer a {
+    color: var(--grey-8);
+}
+
+footer a:hover {
+    color: var(--grey-8);
+}
